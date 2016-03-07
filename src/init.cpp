@@ -1651,7 +1651,7 @@ bool AppInit2(boost::thread_group& threadGroup, CScheduler& scheduler)
         StartTorControl(threadGroup, scheduler);
 
     StartNode(threadGroup, scheduler);
-#if 0 // Disable partition check for now, it triggers too often (issue #6251)
+
     // Monitor the chain, and alert if we get blocks much quicker or slower than expected
     int64_t nPowTargetSpacing = Params().GetConsensus().nPowTargetSpacing;
     CScheduler::Function f = boost::bind(&PartitionCheck, &IsInitialBlockDownload,
