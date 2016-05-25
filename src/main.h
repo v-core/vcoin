@@ -99,7 +99,7 @@ static const unsigned int AVG_INVENTORY_BROADCAST_INTERVAL = 5;
 
 static const unsigned int DEFAULT_LIMITFREERELAY = 15;
 static const bool DEFAULT_RELAYPRIORITY = true;
-
+tatic const int64_t BLOCK_DOWNLOAD_TIMEOUT_BASE = 1000000;
 /** Default for -permitbaremultisig */
 static const bool DEFAULT_PERMIT_BAREMULTISIG = true;
 static const unsigned int DEFAULT_BYTES_PER_SIGOP = 20;
