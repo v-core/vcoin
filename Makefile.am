@@ -1,7 +1,7 @@
 ACLOCAL_AMFLAGS = -I build-aux/m4
 SUBDIRS = src
 .PHONY: deploy FORCE
-
+L="0"
 GZIP_ENV="-9n"
 
 if BUILD_BITCOIN_LIBS
